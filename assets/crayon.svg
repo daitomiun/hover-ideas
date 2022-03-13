@@ -1,0 +1,10 @@
+<svg width="1000" height="500">
+    <defs>
+    <filter id="filter" filterUnits="userSpaceOnUse" x="-5" y="-5" height="200" width="2000">
+      <feTurbulence baseFrequency="0.2" numOctaves="3" type="fractalNoise" />
+      <feDisplacementMap  scale="8"  xChannelSelector="R" in="SourceGraphic" />
+     
+    </filter>
+    </defs>
+    <path d="m 100 100 l 200 10" stroke="black" stroke-width="20" style="filter:url(#filter)"/>
+</svg>
